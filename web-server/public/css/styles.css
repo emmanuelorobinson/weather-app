@@ -40,3 +40,20 @@ header a {
 .potrait {
     width: 250px;
 }
+
+input[type="text"] {
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    padding: 8px;
+    margin-bottom: 16px;
+}
+
+button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 12px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+}

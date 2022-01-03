@@ -5,15 +5,25 @@
     <title>Weather</title>
     <link rel="icon" href="/img/weather.png">
     <link rel="stylesheet" href="/css/styles.css">
-    <script src="/js/scripts.js"></script>
 </head>
 
 <body>
     <div class="main-content">
         {{> header }}
         <p>Use this site to get your weather</p>
+
+        <form action="/weather" method="get">
+            <input type="text" name="Location" placeholder="City">
+            {{!-- <input type="text" name="country" placeholder="Country"> --}}
+            <button type="submit">Get Weather</button>
+        </form>
+
+        <p id="message-1"></p>
+        <p id="message-2"></p>
     </div>
     {{> footer }}
+
+    <script src="/js/app.js"></script>
 </body>
 
 </html>
